@@ -1,0 +1,68 @@
+body{
+    border: 20px;
+    background-color: aquamarine;
+}
+img{
+    height: 25px;
+}
+.box1{
+    background-image: url(./RollsRoyce.webp);
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    
+}
+.box11{
+    display: flex;
+    flex-direction: row;
+    color: aqua;
+    gap: 30px;
+    margin: 0px;
+    padding: 20px 20px;
+}
+.box12{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0px;
+    padding: 20px 20px;
+}
+.box2{
+    background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    align-content: center;  
+}
+.A1 img{
+   
+   height: 150px;
+   width: 150px;
+   padding: 120px 10px;
+}
+.A2 img{
+   
+    height: 150px;
+    width: 150px;
+    padding: 120px 10px;
+ }
+ .A3 img{
+    
+    height: 150px;
+    width: 150px;
+    padding: 120px 10px;
+ }
+ .A4 img{
+
+    height: 150px;
+    width: 150px;
+    padding: 120px 10px;
+ }
+ .A5 img{
+    
+    height: 150px;
+    width: 150px;
+    padding: 120px 10px ;
+ }
