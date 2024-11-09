@@ -1,0 +1,21 @@
+img{
+    height: 300px;
+    width: 300px;
+    transition: all 3s ease;
+}
+img:hover
+{
+transform: rotate(360deg);
+}
+.fullName{
+    height: 60px;
+    width: 200px;
+    background-color: aqua;
+    color: rgb(83, 73, 13);
+}
+.NiceName{
+    height: 60px;
+    width: 200px;
+    background-color: rgb(113, 192, 192);
+}
+.
