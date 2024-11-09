@@ -1,0 +1,25 @@
+body {
+   background-image: url(./digital-art-isolated-house.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.clock {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    
+    color:#EE204D;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    height: 100hv;
+    width: 100hv;
+   
+
+
+}
