@@ -1,0 +1,35 @@
+img{
+    height: 200px;
+    width:200px
+}
+#main{
+    display: grid;
+    max-width: 1280px;
+    grid-template-columns: repeat(3,auto);
+    place-items: center;
+    gap: 15px;
+}
+.myProduct{
+   padding: 40px;
+   border-radius: 20px;
+   box-shadow: 8px 8px rgb(231, 11, 220);
+   background-color: rgb(185, 163, 38);
+   color: rgb(9, 235, 252);
+   width: 100hv;
+   
+}
+.myProduct:hover{
+    background-color: rgb(5, 252, 252);
+    color:red;
+       box-shadow: 6px 6px rgb(13, 231, 31);
+}
+.name{
+    
+    background-color: aqua;
+    color: brown;
+}
+.name:hover{
+    
+    background-color:brown;
+    color:aqua;
+}
