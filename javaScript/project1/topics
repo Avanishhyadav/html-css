@@ -1,0 +1,17 @@
+JS(JavaScript)
+=========================
+internet,alert,confirm,propmt
+variables(var)
+datatypes(primitine-number,String,boolean,null,undefind,non-primitive function)
+hoisting,callstack,execution
+
+15/05/2024
+
+Arrays : colleaction of items.
+eg. ["aviii",true,15].
+always element store with uniques values called indexes.
+aarays indexes starts with 0 untils length-1.
+arrays is non primitive data type-
+1. primitive stores single value where as non- primitives can store multiple
+2. primitive compares the values , non primitives compares addess
+3. 
