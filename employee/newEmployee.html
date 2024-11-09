@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Employee</title>
+    <link rel="stylesheet" href="newEmployee.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">AVVI</div>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Employee</a></li>
+                <li><a href="#">Loan</a></li>
+            </ul>
+            <button class="logout">Logout</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Add New Employee</h2>
+        <p>All fields marked with * are required</p>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" min="18" max="65" required>
+                </div>
+                <div class="form-group">
+                    <label for="sex">Sex</label>
+                    <select id="sex" name="sex">
+                        <option value="">Choose</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="identity-proof">Identity Proof Choice *</label>
+                    <select id="identity-proof" name="identityProof" required onchange="updateIdentityLabel()">
+                        <option value="">Select</option>
+                        <option value="aadhar">Aadhar</option>
+                        <option value="passport">Passport</option>
+                        <option value="voter-id">Voter ID</option>
+                        <option value="pan-card">PAN Card</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="identity-number" id="identity-label">Identity Number *</label>
+                    <input type="text" id="identity-number" name="identityNumber" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="religion">Religion</label>
+                    <select id="religion" name="religion">
+                        <option value="">Select</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="muslim">Muslim</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="address-section">
+                <button type="button" class="accordion">Temporary Address</button>
+                <div class="panel">
+                    <div class="address-grid">
+                        <div class="form-group">
+                            <label for="temp-plot">Plot No.</label>
+                            <input type="text" id="temp-plot" name="tempPlot">
+                        </div>
+                        <div class="form-group">
+                            <label for="temp-locality">Locality</label>
+                            <input type="text" id="temp-locality" name="tempLocality">
+                        </div>
+                        <div class="form-group">
+                            <label for="temp-city">City</label>
+                            <input type="text" id="temp-city" name="tempCity">
+                        </div>
+                        <div class="form-group">
+                            <label for="temp-state">State</label>
+                            <input type="text" id="temp-state" name="tempState">
+                        </div>
+                        <div class="form-group">
+                            <label for="temp-country">Country</label>
+                            <input type="text" id="temp-country" name="tempCountry">
+                        </div>
+                        <div class="form-group">
+                            <label for="temp-pincode">Pincode</label>
+                            <input 
+                                type="text" 
+                                id="temp-pincode" 
+                                name="tempPincode" 
+                                pattern="[0-9]{6}" 
+                                title="Please enter a 6-digit pincode"
+                                oninvalid="this.setCustomValidity('Length should be equal to 6 characters')"
+                                oninput="this.setCustomValidity('')"
+                                required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="accordion">Permanent Address</button>
+                <div class="panel">
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="same-address" onclick="copyTemporaryAddress()"> Same as Temporary Address
+                        </label>
+                    </div>
+                    <div class="address-grid">
+                        <div class="form-group">
+                            <label for="perm-plot">Plot No.</label>
+                            <input type="text" id="perm-plot" name="permPlot">
+                        </div>
+                        <div class="form-group">
+                            <label for="perm-locality">Locality</label>
+                            <input type="text" id="perm-locality" name="permLocality">
+                        </div>
+                        <div class="form-group">
+                            <label for="perm-city">City</label>
+                            <input type="text" id="perm-city" name="permCity">
+                        </div>
+                        <div class="form-group">
+                            <label for="perm-state">State</label>
+                            <input type="text" id="perm-state" name="permState">
+                        </div>
+                        <div class="form-group">
+                            <label for="perm-country">Country</label>
+                            <input type="text" id="perm-country" name="permCountry">
+                        </div>
+                        <div class="form-group">
+                            <label for="perm-pincode">Pincode</label>
+                            <input 
+                                type="text" 
+                                id="perm-pincode" 
+                                name="permPincode" 
+                                pattern="[0-9]{6}" 
+                                title="Please enter a 6-digit pincode"
+                                oninvalid="this.setCustomValidity('Length should be equal to 6 characters')"
+                                oninput="this.setCustomValidity('')"
+                                required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="accordion">Add Family Members</button>
+                <div class="panel">
+                    <textarea rows="2" placeholder="Enter family members' details"></textarea>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <label>
+                    <input type="checkbox" name="terms" required> Agree to terms and conditions
+                </label>
+                <button type="submit" class="btn submit">Submit</button>
+                <button type="reset" class="btn cancel">Cancel</button>
+                <button type="button" class="btn clear">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function updateIdentityLabel() {
+            const identityProof = document.getElementById("identity-proof").value;
+            const identityLabel = document.getElementById("identity-label");
+
+            if (identityProof === "aadhar") {
+                identityLabel.innerText = "Aadhar *";
+                document.getElementById("identity-number").pattern = "\\d{12}";
+                document.getElementById("identity-number").title = "Aadhar number must be exactly 12 digits";
+            } else if (identityProof === "passport") {
+                identityLabel.innerText = "Passport *";
+                document.getElementById("identity-number").pattern = "[A-PR-WYa-pr-wy][1-9]\\d{6,8}";
+                document.getElementById("identity-number").title = "Passport number must start with a letter followed by 6 to 8 digits";
+            } else if (identityProof === "voter-id") {
+                identityLabel.innerText = "Voter ID *";
+                document.getElementById("identity-number").pattern = "[A-Za-z]{3}\\d{7}";
+                document.getElementById("identity-number").title = "Voter ID must be 3 letters followed by 7 digits";
+            } else if (identityProof === "pan-card") {
+                identityLabel.innerText = "PAN Card *";
+                document.getElementById("identity-number").pattern = "[A-Z]{5}[0-9]{4}[A-Z]";
+                document.getElementById("identity-number").title = "PAN Card number must be 5 letters, 4 digits, followed by 1 letter";
+            } else {
+                identityLabel.innerText = "Identity Number *";
+                document.getElementById("identity-number").pattern = "";
+                document.getElementById("identity-number").title = "";
+            }
+        }
+
+        function
