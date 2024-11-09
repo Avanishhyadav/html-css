@@ -1,0 +1,20 @@
+.box{
+    background-color: rgb(23, 218, 71);
+    color: white;
+    height: 50hv;
+    width: 50vw;
+    border: 1px solid white;
+}
+
+
+.main{
+    display:grid;
+    grid-template-areas: "a a b"
+    "a a b"
+    "a a b";
+    
+  
+   height: 100vh;
+   width: 100vw;
+
+}
