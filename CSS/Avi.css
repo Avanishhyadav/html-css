@@ -1,0 +1,26 @@
+body{
+ background: radial-gradient(red,blue,red,blue); height: 100vh;
+}
+button{
+    background-color: black; color :aqua;
+}
+
+.vis{
+    background-color: chartreuse; color: red;
+}
+.visu{
+    background-color: pink; color: black;
+}
+.Avi{
+    background-color: aquamarine; color: rgb(32, 28, 6);
+}
+.btn{
+    background-color: lightskyblue; color: rgb(133, 42, 42);
+}
+.banti{
+    background-color:goldenrod;
+}
+
+h1{
+    background-color: blue;
+}

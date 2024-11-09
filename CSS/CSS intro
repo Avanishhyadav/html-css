@@ -1,0 +1,20 @@
+1
+ cascadingg style sheets started in 1994. recent version is CSS3 .  CSS is  used to style/design/layout of the web page.
+
+ 2. CSS can be done in three ways
+
+ 
+ 19/04/2024
+  basic selector (tagname,.classame,#idname)
+ color (by name,hex code,rgb,rgba,hsl,hsla)
+ linear-gradient, radial-gradient
+
+ 20/04/2024
+
+ fonts(google fonts)
+ units (px,em,rem,vw,vh,%)
+ background(image,size,attachment,position)
+ text(align,decoration,transform,)
+
+
+ box model is called

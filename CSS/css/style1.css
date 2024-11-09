@@ -1,0 +1,50 @@
+.logobox{
+    background-color: rgba(11, 11, 131, 0.534);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content:left ;
+    color: white;
+    margin-left: 50px;
+    
+}
+a{
+    color: white;
+    margin-right: 50px;
+  
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-right: 50px;
+}
+.mytune{
+    background-image: url(./volumetric-musical-background-with-treble-clef-notes-generative-ai_169016-29576.avif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    color: white;
+
+}
+.mainbox{
+    background-image: url(./gradient-karaoke-background_23-2150970016.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    color: white;
+}
+.btn{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 50hv;
+}

@@ -1,0 +1,64 @@
+
+.main
+{
+    background-color:aqua;
+   
+   
+    height: 400vh;
+    width: 400vh;
+    
+}
+.box
+{ background-color: white;
+    border:20px;
+  border-radius: 50%;
+   padding: 10px;
+
+    height: 100px;
+    width: 100px;
+}
+.box1
+{ background-color: white;
+   
+    border-radius: 50%;
+   padding: 10px;
+
+    height: 100px;
+    width: 100px;
+}
+.box2
+{ background-color: white;
+    
+    border-radius: 50%;
+   padding: 10px;
+
+    height: 100px;
+    width: 100px;
+}
+.box:hover{
+    background-color: red;
+    height: 100px;
+    margin: 6px;
+}
+.box1:hover{
+    background-color: rgb(250, 241, 66);
+    height: 100px;
+    margin: 6px;
+}
+.box2:hover{
+    background-color:rgb(6, 252, 39);
+    height: 100px;
+    margin: 6px;
+}
+.box3
+{ background-color: rgb(2, 0, 0);
+    
+   padding: 10px;
+
+    height: 500px;
+    width: 8px;
+    margin-left: 46px;
+}
+.A{
+    
+}
