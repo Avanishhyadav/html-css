@@ -1,0 +1,36 @@
+.main{
+border-color: black;
+height: 50px;
+width: 100px;
+}
+
+
+.box{
+    background-color: solid black;
+    
+    height: 100px;
+    width: 100;
+}
+input:required{
+    background-color: yellow;
+}
+input:focus{
+    background-color: blue;
+}
+.box:nth-child(even){
+    background-color: chocolate;
+}
+.box:nth-child(odd){
+    background-color: greenyellow;
+}
+.box:nth-of-type(1){
+    background-color: rgb(215, 235, 184);
+}
+.box:empty{
+    background-color: aqua;
+}
+p::first-line{
+    background-color: pink;
+    size: 50px;
+}
+
